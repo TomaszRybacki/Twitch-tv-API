@@ -1,0 +1,44 @@
+.main-box {
+  margin: 20px;
+  background: $sand;
+  max-width: 1000px;
+  width: 1000px;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: 20px;
+
+  @include mobile {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.title {
+  font-weight: bold;
+  font-size: $epic;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  background: $darkpurple;
+  color: $white;
+
+   @include mobile {
+    font-size: $xlarge;
+  }
+}
+
+.channels {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  margin-top: 10px;
+}
+
+.column {
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

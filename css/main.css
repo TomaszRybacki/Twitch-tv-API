@@ -1,0 +1,165 @@
+/********** This CSS is written in SASS in BEM methodology **********/
+/* RESET **************************************************************************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* VARIABLES ************************************************************************ */
+/* Font - size */
+/* Theme - colors */
+/* MIXIN **************************************************************************** */
+/* LAYOUT *************************************************************************** */
+body {
+  background: #93628f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media only screen and (max-width: 420px) {
+    body {
+      background: #f3decd; } }
+
+/* BLOCK **************************************************************************** */
+.main-box {
+  margin: 20px;
+  background: #f3decd;
+  max-width: 1000px;
+  width: 1000px;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: 20px; }
+  @media only screen and (max-width: 420px) {
+    .main-box {
+      width: 100%;
+      padding: 0;
+      margin: 0; } }
+
+.title {
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  background: #4a2849;
+  color: #f9eee8; }
+  @media only screen and (max-width: 420px) {
+    .title {
+      font-size: 32px; } }
+
+.channels {
+  margin-top: 20px; }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px; }
+
+.column {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 25%;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* ELEMENT ************************************************************************** */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  background: #4a2849;
+  color: #f9eee8;
+  margin-bottom: 20px; }
+  @media only screen and (max-width: 420px) {
+    .name {
+      padding: 10px; } }
+
+.logo {
+  width: 50px;
+  height: 50px; }
+
+p {
+  font-size: 18px;
+  color: black;
+  text-align: center; }
+  @media only screen and (max-width: 420px) {
+    p {
+      font-size: 14px; } }
+
+.status {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.on {
+  color: green; }
+
+.off {
+  color: red; }
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black; }
+  @media only screen and (max-width: 420px) {
+    a {
+      font-size: 14px; } }
+
+a:hover {
+  text-shadow: 0px 6px 1px #969696;
+  cursor: pointer; }
+
+/* MODIFIER ************************************************************************* */
